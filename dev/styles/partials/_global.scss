@@ -10,6 +10,11 @@ a{
     display: inline-block;
     text-decoration: none;
 }
+input,
+textarea{
+    background: transparent;
+    border: 1px solid $textGrey
+}
 
 body{
     font-size: 62.5%;
@@ -24,3 +29,21 @@ h4{
     margin: 0;
     padding: 0;
 }    
+.wrapper{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.btn{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: $headingFont;
+    padding: 5px 20px;
+    font-size: 0.6rem;
+        &:hover{
+            background-color: $highlightRed;
+            border:1px solid $highlightRed;
+            color: white;
+        }
+}

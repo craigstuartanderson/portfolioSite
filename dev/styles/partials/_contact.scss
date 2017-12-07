@@ -1,0 +1,34 @@
+.contact{
+    font-family: $headingFont;
+    background: $lightBg;
+    color: $textGrey;
+        &__heading{
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            padding: 25px;
+            text-align: center;
+        }
+}
+.contactContainer{
+    display: flex;
+    justify-content: center;
+}
+.contactInfo{
+    width: 30%;
+    margin:25px;
+}
+
+.contactForm{
+    width: 30%;
+    margin: 25px;
+        form{
+            display: flex;
+            flex-direction: column;
+            // align-items: flex-start
+        }
+        .btn{
+            margin: 25px 0;
+            width: 80px;
+        }
+
+}

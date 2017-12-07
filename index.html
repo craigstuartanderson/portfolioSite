@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Craig Anderson</title>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
@@ -32,7 +33,7 @@
         <section class="about">
             <div class="aboutContainer wrapper">
                 <div class="aboutImg">
-                    <img src="#" alt="">
+                    <img src="/public/images/HyHs.jpg" alt="Craig Anderson Headshot seated in red chair">
                 </div> 
                 <div class="aboutContent">
                     <h2 class="aboutContent__heading">About Me</h2>
@@ -48,47 +49,79 @@
         
         
         <section class="work">
-            <h2>Work</h2>
+            <h2 class="work__heading">My Work</h2>
             <div class="portfolio wrapper">
-                <div class="portfolioBlockSm">
-                    <div class="portfolioBlockSm__overlay">
-                        <h3>Project</h3>
+   
+                <div class="portfolio__block portfolio__block--sm">
+                    <div class="portfolio__block--overlay">
+                        <h3>Magik : The Actoring</h3>
+                        <h4>API and JQuery Game</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae voluptatem mollitia molestiae eius assumenda?</p>
                         <p>icons?</p>
                         <a href="#">Link to project</a>
                     </div>
                 </div>
-                <div class="portfolioBlockLrg">
-                    <div class="portfolioBlockLrg__overlay">
-                        <h3>Project</h3>
+                
+                <div class="portfolio__block portfolio__block--lrg">
+                    <div class="portfolio__block--overlay">
+                        <h3>Airport Thriller Novel</h3>
+                        <h4>Javascript Name Generator App</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae voluptatem mollitia molestiae eius assumenda?</p>
                         <p>icons?</p>
                         <a href="#">Link to project</a>
                     </div>
                 </div>
-                <div class="portfolioBlockSm">
-                    <div class="portfolioBlockSm__overlay">
-                        <h3>Project</h3>
+
+                <div class="portfolio__block portfolio__block--xlrg">
+                    <div class="portfolio__block--overlay">
+                        <h3>Tasting Notes Wine Journal<h3>
+                        <h4>React and Firebase App using the LCBO API</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae voluptatem mollitia molestiae eius assumenda?</p>
                         <p>icons?</p>
                         <a href="#">Link to project</a>
                     </div>
                 </div>
-                <div class="portfolioBlockLrg">
-                    <div class="portfolioBlockLrg__overlay">
-                        <h3>Project</h3>
+               
+                <div class="portfolio__block portfolio__block--lrg">
+                    <div class="portfolio__block--overlay">
+                        <h3>Beer League Softball Card<h3>
+                        <h4>React and Firebase Stats Tracker App</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae voluptatem mollitia molestiae eius assumenda?</p>
                         <p>icons?</p>
                         <a href="#">Link to project</a>
                     </div>
-                </div>   
+                </div>
+                
+                <div class="portfolio__block portfolio__block--sm">
+                    <div class="portfolio__block--overlay">
+                        <h3>PSD to HTML</h3>
+                        <h4>Fully Responsive Sass PSD Conversion</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae voluptatem mollitia molestiae eius assumenda?</p>
+                        <p>icons?</p>
+                        <a href="#">Link to project</a>
+                    </div>
+                </div>  
+
             </div>
         </section>
 
 
         <section class="skills">
+            <!-- <h2 class="skills__heading">My Skills</h2> -->
             <div class="skillsIcons wrapper">
-                <div class="skillsIcons__block">
+                <p>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-git-plain-wordmark"></i>
+                    <i class="devicon-gulp-plain"></i>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-jquery-plain-wordmark"></i>
+                    <i class="devicon-nodejs-plain-wordmark"></i>
+                    <i class="devicon-react-original-wordmark"></i>
+                    <i class="devicon-sass-original"></i>
+                    <i class="devicon-visualstudio-plain"></i>
+                </p>
+                <!-- <div class="skillsIcons__block">
                    <img class="skillsIcons__svg" src="#" alt="">
                 </div>
                 <div class="skillsIcons__block">
@@ -105,13 +138,13 @@
                 </div>
                 <div class="skillsIcons__block">
                     <img class="skillsIcons__svg" src="#" alt="">
-                </div>
+                </div> -->
             </div>
         </section>
         
         
         <section class="contact">
-            <h2>contact</h2>
+            <h2 class="contact__heading">contact</h2>
             <div class="contactContainer wrapper">
                 
                 <div class="contactInfo">
@@ -132,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ContactForm">
+                <div class="contactForm">
                     <form action="">
                         <label for="name">Name</label>
                         <input type="text" name="name" placeholder="Name">

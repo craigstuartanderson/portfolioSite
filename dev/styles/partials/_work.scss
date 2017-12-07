@@ -1,0 +1,58 @@
+.work{
+    background: $darkBg;
+    color: $lightBg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        &__heading{
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-size: 1.6rem;
+            letter-spacing: 5px;
+            padding: 50px;
+        }
+}
+.portfolio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-around;
+    flex-wrap: wrap;
+        &__block{
+            border: 1px solid grey;
+            margin: 20px 0px;
+            padding: 20px;
+                &--sm{
+                    width: 35%;
+                }
+                &--lrg{
+                    width: 55%;
+                }
+                &--xlrg{
+                    width: 100%;
+                }
+                &--overlay{
+                    position: relative;
+                    
+                }
+        }
+        .mockUpFill{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left:0;
+
+        }
+        h3{
+            font-size: 1.2rem;
+
+        }
+        p{
+            font-size: 1rem;
+            line-height: 1.8;
+
+        }
+}
