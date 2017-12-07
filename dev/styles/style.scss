@@ -1,4 +1,32 @@
-h1{
-    color: red;
-}
+
+// Color and Font Variables
+
+$headingFont: 'Montserrat', sans-serif;
+$bodyFont: 'Crimson Text', serif;
+
+$overlayDark: rgba(43, 45, 66, 0.6);
+$overlayLight: rgba(166, 166, 166, 0.37);
+$overlayLighter: rgba(166, 166, 166, 0.09);
+$highlightRed: #ef233c;
+$darkBg:  #2b2d42;
+$lightBg: #f7f7f9;
+
+
+// Partials
+
+@import "partials/setup";
+@import "partials/global";
+@import "partials/about";
+@import "partials/contact";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/hero";
+@import "partials/skills";
+@import "partials/work";
+@import "partials/responsive";
+
+
+
+
+
 
