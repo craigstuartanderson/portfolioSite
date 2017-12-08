@@ -3,6 +3,8 @@
     background: $lightBg;
     color: $textGrey;
         &__heading{
+            color: black;
+            letter-spacing: 2px;
             font-size: 1.6rem;
             text-transform: uppercase;
             padding: 25px;
