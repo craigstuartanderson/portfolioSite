@@ -35,16 +35,16 @@ h4{
 }
 .btn{
     background-color: transparent;
-    border: 1px solid $highlightRed;
-    color: $highlightRed;
+    border: 1px solid $highlight;
+    color: $highlight;
     border-radius: 2px;
     text-transform: uppercase;
     font-family: $headingFont;
     padding: 5px 20px;
     font-size: 0.6rem;
         &:hover{
-            background-color: $highlightRed;
-            border:1px solid $highlightRed;
+            background-color: $highlight;
+            border:1px solid $highlight;
             color: white;
         }
 }

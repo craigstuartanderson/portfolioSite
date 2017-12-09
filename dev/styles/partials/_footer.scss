@@ -18,7 +18,7 @@ footer{
                 content: "";
                 height: 80px;
                 width: 1px;
-                background:$highlightRed;
+                background:$highlight;
                 position: absolute;
                 bottom: 20px;
                 left: 99px;
@@ -37,7 +37,7 @@ footer{
                 font-size: 1rem;
                 color: $overlayLight;
                     &:hover{
-                        color: $highlightRed;
+                        color: $highlight;
                     }
             }
         }
