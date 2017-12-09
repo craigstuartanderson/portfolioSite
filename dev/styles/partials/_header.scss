@@ -4,6 +4,27 @@ header{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+        .afterContainer{
+            position: relative;
+            width: 200px;
+                h3{
+                    padding-top: 30px;
+                    text-align: center; 
+                    text-transform: uppercase;
+                    font-size: 0.6rem;
+                    font-weight: 400;
+                    color: white;
+                        &:after{
+                        content: "";
+                        height: 80px;
+                        width: 1px;
+                        background:$highlightRed;
+                        position: absolute;
+                        bottom: -115px;
+                        right: 100px;
+                        }
+                }
+        }
 }
 
 .heroOverlay{

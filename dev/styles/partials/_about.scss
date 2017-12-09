@@ -1,6 +1,6 @@
 .about{
     height: 100vh;
-    background: $lightBg;
+    // background: $lightBg;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,5 +29,6 @@
         }
         p{
             font-size: 0.8rem;
+            letter-spacing: 2px;
         }
 }

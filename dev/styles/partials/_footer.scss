@@ -1,4 +1,50 @@
 footer{
-    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
     background-color: $darkBg;
-}
+        .afterContainer{
+            position: relative;
+            width: 200px;
+        }
+        h3{
+            text-transform: uppercase;
+            margin-top: 50px;
+            font-weight: 400;
+            font-size: 0.6rem;
+            color: white;
+                &::after{
+                content: "";
+                height: 80px;
+                width: 1px;
+                background:$highlightRed;
+                position: absolute;
+                bottom: 20px;
+                left: 99px;
+            }
+        }
+        .footerLinks{
+            margin: 20px;
+            letter-spacing: 5px;
+                a:visited{
+                    color: $overlayLight;
+                }
+                a:active{
+                    color: $overlayLight;
+                }
+            i{
+                font-size: 1rem;
+                color: $overlayLight;
+                    &:hover{
+                        color: $highlightRed;
+                    }
+            }
+        }
+        .copyright{
+            font-size: 0.6rem;
+            color: $overlayLight;
+            font-family: $headingFont;
+            padding-bottom: 30px;
+        }
+    }

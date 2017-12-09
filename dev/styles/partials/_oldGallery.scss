@@ -1,0 +1,165 @@
+.work{
+    background: $darkBg;
+    color: $lightBg;
+    display: flex;
+    // height: 300vh;
+    flex-direction: column;
+    justify-content: center;
+        &__heading{
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-size: 1.6rem;
+            letter-spacing: 5px;
+            padding: 50px;
+        }
+        a{
+            border: 1px solid white;
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            font-family: $headingFont;
+            text-transform: uppercase;
+                &:hover{
+                    background-color: $highlightRed;
+                    border: $highlightRed; 
+                }
+                &:visited{
+                    color: white;
+                }
+                &:active{
+                    color:white;
+                }
+        }
+}
+.workOverlay{
+    height: 100%;   
+    background: $overlayLighter;
+    // border: 1px solid grey;
+    
+}
+
+// GALLERY LAYOUT 
+.gallery{
+    // border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+        &__rightSub{
+            width: 70%;
+            flex-wrap: wrap;
+        }
+        &__leftSub{
+            width: 30%;
+        }
+}
+.portfolio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+        &__block{
+            // border: 1px solid grey;
+            // background: $darkBg;
+            // margin: 20px 0px;
+            // padding: 20px;
+                &--book{
+                    width: 30%;
+                }
+                &--actor{
+                    width: 70%;
+                    display: flex;
+                }
+                &--ball{
+                    width: 100%;
+                }
+                &--psd{
+                    width: 60%;
+                }
+                &--blank{
+                    width: 40%;
+                }
+                &--wine{
+                    width: 100%;
+                }
+                &--overlay{
+                    display: flex;
+                    flex-wrap: wrap;
+                    background: $overlayLighter;
+                    height: 100%;
+                    padding: 10px;
+                    border: 1px solid grey;
+                    
+                    
+                }
+        }
+        svg{
+            // display: none;
+            width: 30px;
+            fill: $highlightRed;
+            stroke: $highlightRed;
+        }
+        h3{
+            font-size: 1rem;
+            letter-spacing: 3px;
+            font-weight: 400;
+
+        }
+        h4{
+            color: $highlightRed;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        p{
+            font-size: 0.8rem;
+            line-height: 1.8;
+            letter-spacing: 2px;
+
+        }
+}
+
+// SPECIFIC LAYOUTS
+// top layout
+.bookImg{
+    width: 50%;
+}
+
+.actorImg{
+    width: 80%;
+}
+
+// bottom layout
+
+
+
+// bottom left layout
+.ballImg{
+    display: flex;
+    justify-content: space-around;
+    background: $overlayLighter;
+}
+.bb{
+    width: 40%;
+}
+
+// bottom right layout
+.psdImg{
+    width: 70%;
+}
+.psdLink{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.psdContent{
+    width: 100%;
+    padding: 20px;
+}
+.wineImg{
+    width: 30%;
+}
