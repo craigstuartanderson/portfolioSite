@@ -13,13 +13,6 @@
             padding: 50px;
         }
 }
-// .workOverlay{
-//     height: 100%;   
-//     background: $overlayLighter;
-//     // border: 1px solid grey;
-    
-// }
-
 
 .portfolio{
     display: flex;
@@ -40,9 +33,6 @@
                     color: white;
                     border: $highlight; 
                 }
-                // &:visited{
-                //     color: $highlight;
-                // }
                 &:active{
                     color:$highlight;
                 }
@@ -53,7 +43,6 @@
                 &--overlay{
                     display: flex;
                     flex-wrap: wrap;
-                    // background: $overlayLighter;
                     height: 100%;
                     padding: 10px;  
                 }

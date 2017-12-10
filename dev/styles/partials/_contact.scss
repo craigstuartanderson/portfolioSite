@@ -2,6 +2,7 @@
     font-family: $headingFont;
     background: $lightBg;
     color: $textGrey;
+    padding-bottom: 10px;
         &__heading{
             color: black;
             letter-spacing: 2px;
@@ -13,24 +14,45 @@
 }
 .contactContainer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .contactInfo{
-    width: 30%;
-    margin:25px;
-}
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &__detail{
+        h4{
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+        span{
+            padding: 0 5px;
+        }
+    }
+    
+    }
 
 .contactForm{
-    width: 30%;
-    margin: 25px;
+    width: 50%;
+    margin: 20px auto;;
         form{
             display: flex;
             flex-direction: column;
-            // align-items: flex-start
         }
         .btn{
-            margin: 25px 0;
+            margin: 10px auto;
             width: 80px;
         }
-
+        input,
+        textarea{
+        background: transparent;
+        border: 1px solid #6e6e6e;
+        line-height: 2;
+        font-family: $headingFont;
+        font-size: 0.8rem;
+        margin: 5px 0;
+        }
 }
