@@ -1,5 +1,5 @@
 .work{
-    background: $lightBg;
+    background: darken($lightBg, 10%);
     color: $darkBg;
     display: flex;
     flex-direction: column;
@@ -10,28 +10,43 @@
             color: black;
             font-size: 1.6rem;
             letter-spacing: 5px;
-            padding: 50px;
+            padding: 100px 0 0 0;
+            position: relative;
+            text-shadow: 0 0 5px white;
+            &::after{
+                content: "";
+                height: 1px;
+                width: 110px;
+                background: #ef233c;
+                position: absolute;
+                bottom: 15px;
+                left: 549px;
+            }
         }
 }
 
 .portfolio{
+    padding: 0 0 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
         a{
-            border: 1px solid $highlight;
+            width: 115px;
+            text-align: center;
+            border: 1px solid black;
             border-radius: 2px;
-            color: $highlight;
+            color: black;
             padding: 5px 10px;
             font-size: 0.8rem;
             letter-spacing: 2px;
             font-family: $headingFont;
             text-transform: uppercase;
+            transition: color 0.2s, border 0.2s, background-color 0.2s;
                 &:hover{
                     background-color:$highlight;
                     color: white;
-                    border: $highlight; 
+                    border:1px solid $highlight; 
                 }
                 &:active{
                     color:$highlight;
@@ -39,17 +54,19 @@
         }
         &__block{
             display: flex;
-            padding: 50px 0;
+            padding: 30px 0;
                 &--overlay{
                     display: flex;
                     flex-wrap: wrap;
-                    height: 100%;
-                    padding: 10px;  
+                    height: 100%; 
                 }
                 &--img{
                     width: 30%;
                 }
                 &--content{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     width: 70%;
                 }
                 &--title{
@@ -57,10 +74,11 @@
                     width: 100%;
                 }
                 &--heading{
-                    width: 80%;
+                    // width: 80%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    text-shadow: 0 0 5px white;
                 }
                 &--Left{
                     // justify-content: flex-end;
@@ -88,7 +106,8 @@
             letter-spacing: 2px;
         }
         p{
-            font-size: 0.8rem;
+            width: 90%;
+            font-size: 1rem;
             line-height: 1.8;
             letter-spacing: 2px;
 
@@ -96,6 +115,14 @@
 }
 
 // SPECIFIC LAYOUTS
+.blockLeft{
+    text-align: right;
+    margin: 0 0 0 auto;
+    p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
 
 .twoPhones{
     width: 10%;

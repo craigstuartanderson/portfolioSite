@@ -1,13 +1,17 @@
 .skills{
-    background: $highlight;
-        // &__heading{
-        //     text-align: center;
-        //     text-transform: uppercase;
-        //     color: $lightBg;
-        //     font-size: 1.2rem;
-        //     letter-spacing: 5px;
-        //     padding: 20px;
-        // }
+    background: url('./public/images/pecSky.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        &__heading{
+            text-align: center;
+            text-transform: uppercase;
+            color: $lightBg;
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 5px;
+            padding: 20px;
+        }
 }  
 .skillsIcons{
     width: 80%;
@@ -15,11 +19,11 @@
     align-items: center;
     justify-content: space-around;
     color: $lightBg;
-    font-size: 2.5rem;
-    padding: 20px;
+    font-size: 3rem;
+    padding: 40px 20px;
     margin: 0 auto;
         
 } 
 .skillsOverlay{
-    background: $overlayLighter;
+    background: $overlayDark;
 }
