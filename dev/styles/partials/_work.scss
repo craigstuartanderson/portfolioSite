@@ -36,15 +36,15 @@
             font-family: $headingFont;
             text-transform: uppercase;
                 &:hover{
-                    background-color: $highlight;
+                    background-color:$highlight;
                     color: white;
                     border: $highlight; 
                 }
-                &:visited{
-                    color: white;
-                }
+                // &:visited{
+                //     color: $highlight;
+                // }
                 &:active{
-                    color:white;
+                    color:$highlight;
                 }
         }
         &__block{
@@ -107,7 +107,7 @@
 }
 
 // SPECIFIC LAYOUTS
-// top layout
+
 .twoPhones{
     width: 10%;
     margin: 0 20px 20px 20px;
@@ -116,37 +116,4 @@
 .overlapPhone{
     top: 30px;
     right: 60px;
-}
-// bottom layout
-
-
-
-// bottom left layout
-.ballImg{
-    display: flex;
-    justify-content: space-around;
-    background: $overlayLighter;
-}
-.bb{
-    width: 40%;
-}
-
-// bottom right layout
-.psdImg{
-    width: 70%;
-}
-.psdLink{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-.psdContent{
-    width: 100%;
-    padding: 20px;
-}
-.wineImg{
-    width: 30%;
 }

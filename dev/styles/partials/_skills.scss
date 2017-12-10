@@ -10,7 +10,6 @@
         // }
 }  
 .skillsIcons{
-    background: $overlayLighter;
     width: 80%;
     display: flex;
     align-items: center;
@@ -21,3 +20,6 @@
     margin: 0 auto;
         
 } 
+.skillsOverlay{
+    background: $overlayLighter;
+}
