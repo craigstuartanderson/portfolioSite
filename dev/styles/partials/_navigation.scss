@@ -1,0 +1,39 @@
+.topNav{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+ul.navList{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 10;
+    right: -30%;
+    top: 20px; 
+    transition: right 0.5s;
+        li a{
+            color: $lightBg;
+            font-family: $headingFont;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 400;
+                &:link{
+                    color: $lightBg;
+                }
+                &:visited{
+                    color: $lightBg;
+                }
+                &:hover{
+                    border-bottom: 1px solid $highlight;
+                }
+            }        
+    
+}
+input#burgerCheck{
+    display: none;
+}
+input#burgerCheck:checked + ul.navList{
+    right: 0;
+}

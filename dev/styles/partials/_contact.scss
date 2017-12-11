@@ -23,6 +23,13 @@
     justify-content: space-around;
     align-items: center;
     &__detail{
+        a:link,
+        a:visited{
+            color: $textGrey;
+        }
+        a:hover{
+            color: $highlight;
+        }
         h4{
             font-size: 0.8rem;
             font-weight: 400;

@@ -6,8 +6,10 @@ header{
     background-repeat: no-repeat;
         .afterContainer{
             position: relative;
+            bottom: 100px;
             width: 200px;
             text-align: center;
+            margin: 0 auto;
                 h3{
                     padding-top: 30px;
                     text-align: center; 
@@ -32,17 +34,25 @@ header{
 .heroOverlay{
     height: 100%;
     background-color: $overlayDark;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+        label{
+            color: $lightBg;
+            font-size: 1.2rem;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
 }
 .hero{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80%;
+    height: 100%;
     width: 100%;
         h1{
             font-size: 2.4rem;
