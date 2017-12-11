@@ -4,26 +4,29 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
         &__heading{
             text-align: center;
             text-transform: uppercase;
+            width: 200px;
             color: black;
             font-size: 1.6rem;
             letter-spacing: 5px;
             padding: 100px 0 0 0;
             position: relative;
             text-shadow: 0 0 5px white;
-            &::after{
-                content: "";
-                height: 1px;
-                width: 110px;
-                background: #ef233c;
-                position: absolute;
-                bottom: 15px;
-                left: 549px;
-            }
+                .workLine::after{
+                        content: "";
+                        height: 1px;
+                        width: 115px;
+                        background: #ef233c;
+                        position: absolute;
+                        bottom: 15px;
+                        left: 70px;
+                }
         }
 }
+
 
 .portfolio{
     padding: 0 0 50px 0;
