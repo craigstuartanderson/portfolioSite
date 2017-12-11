@@ -4,13 +4,13 @@
     position: relative;
 }
 
-ul.navList{
-    width: 30%;
+.navList{
+    width: 40%;
     display: flex;
     justify-content: space-around;
     position: absolute;
     z-index: 10;
-    right: -30%;
+    right: -45%;
     top: 20px; 
     transition: right 0.5s;
         li a{

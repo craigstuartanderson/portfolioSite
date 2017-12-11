@@ -1,5 +1,4 @@
 .about{
-    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +10,9 @@
 .aboutImg{
     width: 30%;
     padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
         img{
             box-shadow: -10px 10px 0 $highlight; 
         }
@@ -30,4 +32,10 @@
             font-size: 0.8rem;
             letter-spacing: 2px;
         }
+}
+.aboutMobileHeading{
+    display: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
 }
