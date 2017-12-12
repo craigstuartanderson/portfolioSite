@@ -62,15 +62,18 @@ header{
             position: relative;
             text-align: center;
         }
-            .titleLine::after{
-                content: "";
-                height: 2px;
-                width: 485px;
-                background:$highlight;
-                position: absolute;
-                bottom: 22px;
-                left: 180px;
-            }
+        .titleLine{
+                &::after{
+                    content: "";
+                    height: 2px;
+                    width: 485px;
+                    background:$highlight;
+                    position: absolute;
+                    bottom: 22px;
+                    left: 180px;
+                    }
+        }
+        
         h4{
             font-size: 0.8rem;
             font-weight: 400;

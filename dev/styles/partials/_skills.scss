@@ -1,8 +1,9 @@
 .skills{
-    background: url('../images/pecSky.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background: url('../images/pecSky.jpg');
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    background-color: $highlight;
         &__heading{
             text-align: center;
             text-transform: uppercase;
@@ -18,12 +19,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: $lightBg;
+    color: white;
     font-size: 3rem;
     padding: 40px 20px;
     margin: 0 auto;
         
 } 
 .skillsOverlay{
-    background: $overlayDark;
+    background: $overlayLighter;
 }

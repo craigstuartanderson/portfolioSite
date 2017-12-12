@@ -3,8 +3,17 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    background-color: $darkBg;
+    // background-color: $darkBg;
+    background: url('../images/pecSky.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        .footerOverlay{
+            background: $overlayDark;
+    
+        }
         .afterContainer{
+            margin: 0 auto;
             position: relative;
             width: 200px;
         }
@@ -29,14 +38,15 @@ footer{
             margin: 20px;
             letter-spacing: 10px;
                 a:visited{
-                    color: $overlayLight;
+                    color: $lightBg;
                 }
                 a:active{
-                    color: $overlayLight;
+                    color: $lightBg;
                 }
             i{
                 font-size: 1.4rem;
-                color: $overlayLight;
+                color: $lightBg;
+                transition: color 0.2s;
                     &:hover{
                         color: $highlight;
                     }
@@ -44,7 +54,7 @@ footer{
         }
         .copyright{
             font-size: 0.6rem;
-            color: $overlayLight;
+            color: $lightBg;
             font-family: $headingFont;
             padding-bottom: 30px;
         }
