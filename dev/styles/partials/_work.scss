@@ -43,11 +43,11 @@
         a{
             width: 115px;
             text-align: center;
-            border: 1px solid $highlight;
+            border: 1px solid black;
             border-radius: 2px;
-            color: $highlight;
+            color: black;
             padding: 5px 10px;
-            margin: 5px 10px;
+            margin: 10px 10px 5px 0;
             font-size: 0.8rem;
             letter-spacing: 2px;
             font-family: $headingFont;
@@ -93,9 +93,14 @@
                 &--links{
                     display: flex;
                 }
-                // &--Left{
-                //     // justify-content: flex-end;
-                // }
+                .techSpecs{
+                    font-family: $headingFont;
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    margin: 2px 0 0 0;
+                    color: $highlight;
+                }
                 
         }
         h3{
