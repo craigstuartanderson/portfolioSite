@@ -7,7 +7,7 @@
             letter-spacing: 2px;
             font-size: 1.6rem;
             text-transform: uppercase;
-            padding: 25px;
+            padding: 0px 25px 25px 25px;
             text-align: center;
         }
 }
@@ -22,6 +22,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    p{
+            font-size: 0.8rem;
+        }
     &__detail{
         a:link,
         a:visited{
@@ -31,7 +34,7 @@
             color: $highlight;
         }
         h4{
-            font-size: 0.8rem;
+            font-size: 1rem;
             font-weight: 400;
         }
         span{

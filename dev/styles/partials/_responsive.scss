@@ -4,12 +4,6 @@
         width: 50%;
         right: -55%;
     }
-    .hero .titleLine::after{
-        height: 1px;
-        width: 270px;
-        bottom: -22px;
-        left: 190px;
-    }
     .skillsIcons{
         font-size: 2.5rem;
         width: 90%;
@@ -25,7 +19,8 @@
         display: none;
     }
     .hero .titleLine::after{
-        left: 105px;
+        width: 100%;
+        left:0;
     }
     .aboutContainer{
         flex-direction: column;
@@ -76,10 +71,8 @@
         width: 60%;
         right: -65%;
     }
-
-    .hero .titleLine::after{
-        left: -10px;
-        width: 495px;
+    .hero h1{
+        font-size: 2.5rem;
     }
     
     .aboutContainer{

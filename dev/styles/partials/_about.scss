@@ -6,6 +6,7 @@
 .aboutContainer{
     display: flex;
     justify-content: center;
+    margin: 50px auto;
 }
 .aboutImg{
     width: 30%;
@@ -27,10 +28,12 @@
             text-transform: uppercase;
             font-size: 1.6rem;
             letter-spacing: 2px;
+            // border-bottom: 1px solid $highlight;
         }
         p{
-            font-size: 0.8rem;
+            font-size: 1.1rem;
             letter-spacing: 2px;
+            color: $textGrey;
         }
 }
 .aboutMobileHeading{

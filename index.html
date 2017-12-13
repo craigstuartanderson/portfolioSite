@@ -13,13 +13,10 @@
 
     <header>
         <div class="heroOverlay" id="top">
-            <nav class="topNav">
-                    <label for="burgerCheck"><i class="fa fa-bars" aria-hidden="true"></i></label>
+            <!-- <nav class="topNav">
+                    <label class="burgerIcon" for="burgerCheck"><i class="fa fa-bars" aria-hidden="true"></i></label>
                     <input type="checkbox" id="burgerCheck" name"burgerCheck">
                 <ul class="navList">
-                    <!-- <li>
-                        <a href="#">Home</a>
-                    </li> -->
                     <li>
                         <a href="#about">About</a>
                     </li>
@@ -31,9 +28,9 @@
                     </li>
                     
                 </ul>
-            </nav>
+            </nav> -->
             <div class="hero wrapper">
-                    <h1><span class="titleOpening">Hi. I'm </span><span class="titleLine">Craig Anderson</span></h1>
+                    <h1><span class="titleOpening"></span><span class="titleLine">Craig Anderson</span></h1>
                     <h4>Front End Developer</h4>
             </div>
             <div class="afterContainer">
@@ -47,7 +44,7 @@
 
     <main>
 
-        
+        <!-- ABOUT SECTION -->
         <section class="about" id="about">
             <div class="aboutContainer wrapper">
                 <div class="aboutImg">
@@ -56,8 +53,8 @@
                 <div class="aboutContent">
                     <h2 class="aboutContent__heading">About Me</h2>
                     <div class="aboutContent__copy">
-                        <p>I’m Craig Anderson, a Web Developer based in Toronto. My background in the Film & Television Industry, and my years as a comedian and improv teacher make me an unconventional thinker with a knack for being relentlessly
-                        useful.</p>
+                        <!-- <p>I’m Craig Anderson, a Web Developer based in Toronto. My background in the Film & Television Industry, and my years as a comedian and improv teacher make me an unconventional thinker with a knack for being relentlessly
+                        useful.</p> -->
                         <p>I take pride in writing efficient code. I love diving in to the logic of javascript and its possibilities for
                         creating unique and engaging experiences. I’m a builder and a problem solver, and I thrive in collaborative and challenging
                         environments.</p>
@@ -68,10 +65,29 @@
                 </div>
             </div>
         </section>
+
+        <section class="skills">
+            <div class="skillsOverlay">
+                <!-- <h2 class="skills__heading">Skills</h2> -->
+                <div class="skillsIcons">
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-sass-original"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-jquery-plain-wordmark"></i>
+                    <i class="devicon-git-plain-wordmark"></i>
+                    <i class="devicon-gulp-plain"></i>
+                    <!-- <i class="devicon-nodejs-plain-wordmark"></i> -->
+                    <i class="devicon-react-original-wordmark"></i>
+                    <i class="devicon-visualstudio-plain"></i>
+                </div>
+            </div>
+        </section>
         
         <!-- PORTFOLIO SECTION -->
         <section class="work" id="work">
-                <h2 class="work__heading">My <span class="workLine">Work</span></h2>
+                <h2 class="work__heading"><span class="workLine">Portfolio</span></h2>
+                <h4>Recent Work</h4>
                 <div class="portfolio wrapper">
                 
                         <div class="portfolio__block">
@@ -83,13 +99,15 @@
                                     <div class="portfolio__block--title">
                                         <div class="portfolio__block--heading">
                                             <h3>Magic: The Hollywood Edition</h3>
-                                            <h4>JS / JQuery Game using The Movie DB API</h4>
+                                            <h4>jQuery </h4>
                                         </div>
                                     </div>
                                     <p>In the style of 2 player card battles, this app has combatants square off with only the movies of their favourite actors
                                     to defend themselves.</p>
-                                    <a href="/magichollywood">View Site</a>
-                                    <a href="#">GitHub</a>
+                                    <div class="portfolio__block--links">
+                                        <a href="/magichollywood">View Site</a>
+                                        <a href="#">GitHub</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -105,8 +123,10 @@
                                     </div>
                                     <p class="blockLeft">Search the entire LCBO API database for new wines to try, then rate and store your own personal notes on them as you go.
                                     A group project using React and Firebase.</p>
-                                    <a class="blockLeft" href="https://lcbo-agency.firebaseapp.com/">View Site</a>
-                                    <a href="#">GitHub</a>
+                                    <div class="portfolio__block--links">
+                                        <a class="blockLeft" href="https://lcbo-agency.firebaseapp.com/">View Site</a>
+                                        <a href="#">GitHub</a>
+                                    </div>
                                 </div>
                                 <div class="portfolio__block--img">
                                     <img src="./public/images/wineIpadFlat.png" alt="">
@@ -131,8 +151,10 @@
                                     </div>
                                     <p>Track the stats from your weekly rec-league softball game with this react mobile app that stores and compiles your data with
                                     firebase, and generates the baseball card you’ve always dreamed of having.</p>
-                                    <a href="/baseballcard">View Site</a>
-                                    <a href="#">GitHub</a>
+                                    <div class="portfolio__block--links">
+                                        <a href="/baseballcard">View Site</a>
+                                        <a href="#">GitHub</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -147,8 +169,10 @@
                                         </div>
                                     </div>
                                     <p class="blockLeft">In tribute to the endlessly consumable joy of airport bookstore paperbacks, this Javascript app generates the perfect random title for whatever trip you’re planning.</p>
-                                    <a class="blockLeft" href="/airportnovel">View Site</a>
-                                    <a href="#">GitHub</a>
+                                    <div class="portfolio__block--links">
+                                        <a class="blockLeft" href="/airportnovel">View Site</a>
+                                        <a href="#">GitHub</a>
+                                    </div>
                                 </div>
                                 <div class="portfolio__block--img">
                                     <img src="./public/images/airportLeft.png" alt="">
@@ -158,7 +182,7 @@
 
                         <div class="portfolio__block">
                             <div class="portfolio__block--overlay">
-                                <div class="portfolio__block--img">
+                                <div class="portfolio__block--img laptopContainer">
                                     <img class="laptopFrame" src="./public/images/psdSSMB.png" alt="">
                                 </div>
                                 <div class="portfolio__block--content">
@@ -170,34 +194,19 @@
                                     </div>    
                                     <p>A one page creative agency web template recreated from a .psd file. Layout and design dynamically respond to all screen
                                     and device sizes.</p>
-                                    <a href="/psd2">View Site</a>
-                                    <a href="#">GitHub</a>
+                                    <div class="portfolio__block--links">
+                                        <a href="/psd2">View Site</a>
+                                        <a href="#">GitHub</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                 </div>
         </section>
-
-
-        <section class="skills">
-            <div class="skillsOverlay">
-                <!-- <h2 class="skills__heading">Skills</h2> -->
-                <div class="skillsIcons">
-                    <i class="devicon-html5-plain-wordmark"></i>
-                        <i class="devicon-css3-plain-wordmark"></i>
-                        <i class="devicon-sass-original"></i>
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-jquery-plain-wordmark"></i>
-                        <i class="devicon-git-plain-wordmark"></i>
-                        <i class="devicon-gulp-plain"></i>
-                        <!-- <i class="devicon-nodejs-plain-wordmark"></i> -->
-                        <i class="devicon-react-original-wordmark"></i>
-                        <i class="devicon-visualstudio-plain"></i>
-                </div>
-            </div>
-        </section>
         
+    
         
+        <!-- CONTACT SECTION -->
         <section class="contact" id="contact">
             <h2 class="contact__heading">contact</h2>
             <div class="contactContainer wrapper">

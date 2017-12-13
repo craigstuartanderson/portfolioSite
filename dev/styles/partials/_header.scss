@@ -55,23 +55,24 @@ header{
     height: 100%;
     width: 100%;
         h1{
-            font-size: 2.4rem;
-            letter-spacing: 7px;
+            font-size: 3rem;
+            letter-spacing: 10px;
             color: white;
             text-transform: uppercase;
             position: relative;
             text-align: center;
+            padding: 20px 0;
         }
         .titleLine{
                 &::after{
-                    content: "";
-                    height: 2px;
-                    width: 485px;
-                    background:$highlight;
-                    position: absolute;
-                    bottom: 22px;
-                    left: 180px;
-                    }
+                        content: "";
+                        height: 2px;
+                        width: 120%;
+                        background: $highlight;
+                        position: absolute;
+                        bottom: 9px;
+                        left: -11%;
+                }    
         }
         
         h4{
@@ -80,6 +81,7 @@ header{
             letter-spacing: 10px;
             text-align: center;
             color: white;
+            padding: 10px 0;
         }
 
 }
