@@ -35,6 +35,29 @@
             letter-spacing: 2px;
             color: $textGrey;
         }
+        a{
+            width: 115px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 2px;
+            color: black;
+            padding: 5px 10px;
+            margin: 10px 10px 5px 0;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            font-family: $headingFont;
+            text-transform: uppercase;
+            transition: color 0.2s, border 0.2s, background-color 0.2s;
+                &:hover{
+                    background-color:$highlight;
+                    color: white;
+                    border:1px solid $highlight; 
+                }
+                &:active{
+                    color:$highlight;
+                }
+        }
+        
 }
 .aboutMobileHeading{
     display: none;
